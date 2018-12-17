@@ -1,3 +1,5 @@
+#個人環境設定
+
  ## SSHで接続した先で日本語が使えるようにする
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
@@ -71,9 +73,6 @@ alias dc='docker-compose'
  ## git
 export PATH="$HOME/usr/local/bin/git:$PATH"
 
- ## compinit
-autoload -Uz compinit && compinit
-
  ## rbenv
 export PATH="$HOME/.rbenv/shims:$PATH"
 eval "$(rbenv init -)"
@@ -88,17 +87,12 @@ export GOOGLE_CLIENT_SECRET
 ## flutter set up
 export PATH=$PATH:`pwd`/flutter/bin
 
-## zcompile
-if [ ~/.zshrc -nt ~/.zshrc.zwc ]; then
-  zcompile ~/.zshrc
-fi
-
 # zplug
 source ~/.zplug/init.zsh
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
-# theme (https://github.com/sindresorhus/pure#zplug)　好みのスキーマをいれてくだされ。
+# theme
 zplug "themes/agnoster", from:oh-my-zsh
-# 構文のハイライト(https://github.com/zsh-users/zsh-syntax-highlighting)
+# 構文のハイライト
 zplug "zsh-users/zsh-syntax-highlighting"
 # history関係
 zplug "zsh-users/zsh-history-substring-search"
@@ -114,4 +108,9 @@ if ! zplug check --verbose; then
   fi
 fi
 # Then, source plugins and add commands to $PATH
-zplug load --verbose
+zplug load
+
+## zcompile
+if [ ~/.zshrc -nt ~/.zshrc.zwc ]; then
+  zcompile ~/.zshrc
+fi
