@@ -1,5 +1,3 @@
-#個人環境設定
-
  ## SSHで接続した先で日本語が使えるようにする
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
@@ -25,17 +23,11 @@ setopt no_tify
  ## 直前と同じコマンドをヒストリに追加しない
 setopt hist_ignore_dups
 
- ## タブによるファイルの順番切り替えをしない
-unsetopt auto_menu
-
  ## cd -[tab]で過去のディレクトリにひとっ飛びできるようにする
 setopt auto_pushd
 
  ## 重複したディレクトリを追加しない
 setopt pushd_ignore_dups
-
- ## ディレクトリ名を入力するだけでcdできるようにする
-setopt auto_cd
 
  ## 高機能なワイルドカード展開を使用
 setopt extended_glob
