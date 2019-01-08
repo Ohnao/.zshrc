@@ -23,9 +23,6 @@ setopt no_tify
  ## 直前と同じコマンドをヒストリに追加しない
 setopt hist_ignore_dups
 
- ## cd -[tab]で過去のディレクトリにひとっ飛びできるようにする
-setopt auto_pushd
-
  ## 重複したディレクトリを追加しない
 setopt pushd_ignore_dups
 
@@ -105,4 +102,8 @@ zplug load
 ## zcompile
 if [ ~/.zshrc -nt ~/.zshrc.zwc ]; then
   zcompile ~/.zshrc
+fi
+
+if (which zprof > /dev/null) ;then
+  zprof | less
 fi
