@@ -74,7 +74,10 @@ export GOOGLE_CLIENT_ID
 export GOOGLE_CLIENT_SECRET
 
 ## flutter set up
-export PATH=$PATH:`pwd`/flutter/bin
+review-init xport PATH=$PATH:`pwd`/flutter/bin
+
+## review
+export PATH="$HOME/review/bin:$PATH"
 
 # zplug
 source ~/.zplug/init.zsh
