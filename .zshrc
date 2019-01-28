@@ -74,7 +74,7 @@ export GOOGLE_CLIENT_ID
 export GOOGLE_CLIENT_SECRET
 
 ## flutter set up
-review-init xport PATH=$PATH:`pwd`/flutter/bin
+export PATH=$PATH:`pwd`/flutter/bin
 
 ## review
 export PATH="$HOME/review/bin:$PATH"
