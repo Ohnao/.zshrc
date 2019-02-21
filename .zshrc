@@ -43,7 +43,6 @@ function peco-history-selection() {
 
           zle -N peco-history-selection
           bindkey '^R' peco-history-selection
-}
 
  ## 同時に起動したzshの間でヒストリを共有する
 setopt share_history
