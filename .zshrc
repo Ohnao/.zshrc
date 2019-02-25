@@ -34,16 +34,6 @@ HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 
- ## peco
-function peco-history-selection() {
-      BUFFER=`history -n 1 | tac  | awk '!a[$0]++' | peco`
-          CURSOR=$#BUFFER
-              zle reset-prompt
-            }
-
-          zle -N peco-history-selection
-          bindkey '^R' peco-history-selection
-
  ## 同時に起動したzshの間でヒストリを共有する
 setopt share_history
 
