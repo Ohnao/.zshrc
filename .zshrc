@@ -37,6 +37,9 @@ SAVEHIST=1000000
  ## 同時に起動したzshの間でヒストリを共有する
 setopt share_history
 
+ ## openssl
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+
  ## ヒストリに保存するときに余分なスペースを削除する
 setopt hist_reduce_blanks
 
