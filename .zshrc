@@ -73,12 +73,6 @@ export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 ## nodebrew
 export PATH=$PATH:/Users/naoya.ohsaki/.nodebrew/current/bin
 
- ## google oauth
-GOOGLE_CLIENT_SECRET="Ek6llrvhaLI9swHtSL0ToWVp"
-GOOGLE_CLIENT_ID="133942228048-b7hknfl3ocdbcopjnbka5ueiq3ufp64c.apps.googleusercontent.com"
-export GOOGLE_CLIENT_ID
-export GOOGLE_CLIENT_SECRET
-
 ## flutter set up
 export PATH=$PATH:`pwd`/flutter/bin
 
@@ -118,3 +112,6 @@ fi
 if (which zprof > /dev/null) ;then
   zprof | less
 fi
+
+## .zshrc.local
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
