@@ -30,7 +30,7 @@ setopt pushd_ignore_dups
 setopt extended_glob
 
  ## ヒストリの設定
-HISTFILE=~/.zsh_history
+export HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 
