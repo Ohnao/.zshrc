@@ -33,6 +33,8 @@ setopt extended_glob
 export HISTFILE=${HOME}/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
+## スペース始まりのコマンドを削除
+setopt hist_ignore_space
 
  ## 同時に起動したzshの間でヒストリを共有する
 setopt share_history
