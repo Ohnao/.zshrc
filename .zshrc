@@ -36,6 +36,9 @@ SAVEHIST=1000000
 ## スペース始まりのコマンドを削除
 setopt hist_ignore_space
 
+##全てのヒストリを出せるようにした
+function history-all { history -E 1 }
+
  ## 同時に起動したzshの間でヒストリを共有する
 setopt share_history
 
