@@ -39,6 +39,9 @@ setopt hist_ignore_space
 ##全てのヒストリを出せるようにした
 function history-all { history -E 1 }
 
+##ヒストリのエイリアス
+alias histall='history-all'
+
  ## 同時に起動したzshの間でヒストリを共有する
 setopt share_history
 
