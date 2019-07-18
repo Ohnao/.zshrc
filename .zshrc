@@ -5,6 +5,9 @@ export LC_ALL=en_US.UTF-8
  ## 補完で小文字でも大文字にマッチさせる
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
+##単語の途中でもカーソル位置からタブ補完可能
+setopt complete_in_word
+
  ## 日本語ファイル名を表示可能にする
 setopt print_eight_bit
 
