@@ -2,6 +2,7 @@
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
+## ディレクトリとファイルの色分け
 autoload -U compinit
 compinit
 
