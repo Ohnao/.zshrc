@@ -70,8 +70,6 @@ eval "$(pyenv init -)"
  ## neovim
 export XDG_CONFIG_HOME=~/.config
 
-# エイリアス設定
-
  ## neovim
 alias nv='nvim'
 
