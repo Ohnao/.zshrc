@@ -1,4 +1,4 @@
- ##SSHで接続した先で日本語が使える
+##SSHで接続した先で日本語が使える
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
@@ -89,6 +89,7 @@ export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 
 ## nodebrew
 export PATH=$PATH:/Users/naoya.ohsaki/.nodebrew/current/bin
+export PATH=$PATH:/Users/oosakinaoya/.nodebrew/current/bin
 
 ## flutter set up
 export PATH=$PATH:`pwd`/flutter/bin
