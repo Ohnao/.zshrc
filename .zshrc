@@ -129,6 +129,3 @@ fi
 if (which zprof > /dev/null) ;then
   zprof | less
 fi
-
-## .zshrc.local
-[ -f ~/.zshrc] && source ~/.zshrc
