@@ -131,4 +131,4 @@ if (which zprof > /dev/null) ;then
 fi
 
 ## .zshrc.local
-[ -f ~/.zshrc.local ] && source ~/.zshrc.local
+[ -f ~/.zshrc] && source ~/.zshrc
