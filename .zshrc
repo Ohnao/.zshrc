@@ -19,6 +19,9 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 ##単語の途中でもカーソル位置からタブ補完可能
 setopt complete_in_word
 
+## カッコの対応を自動補完
+setopt auto_param_keys
+
  ## 日本語ファイル名を表示可能にする
 setopt print_eight_bit
 
