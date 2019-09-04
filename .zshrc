@@ -82,9 +82,6 @@ alias nv='nvim'
  ## docker-compose
 alias dc='docker-compose'
 
- ## nodebrew
-alias nodebrew='nbr'
-
  ## git
 export PATH="$HOME/usr/local/bin/git:$PATH"
 
