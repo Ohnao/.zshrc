@@ -68,6 +68,9 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
  ## ヒストリに保存するときに余分なスペースを削除する
 setopt hist_reduce_blanks
 
+ ## /を残して表示
+setopt noautoremoveslash
+
  ## pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
