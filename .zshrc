@@ -103,6 +103,9 @@ export PATH=$PATH:`pwd`/flutter/bin
 ## review
 export PATH="$HOME/review/bin:$PATH"
 
+## qt5.5
+export PATH="/Users/naoya.ohsaki/Qt5.5.0/5.5/clang_64/bin:$PATH"
+
 # zplug
 source ~/.zplug/init.zsh
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
