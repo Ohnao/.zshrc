@@ -46,6 +46,9 @@ setopt pushd_ignore_dups
  ## 高機能なワイルドカード展開を使用
 setopt extended_glob
 
+ ## 補完候補一覧でファイル種別を色分け
+setopt list_types
+
  ## ヒストリの設定
 export HISTFILE=${HOME}/.zsh_history
 HISTSIZE=1000000
