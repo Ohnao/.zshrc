@@ -37,9 +37,6 @@ setopt interactive_comments
  ## バックグラウンドジョブが終了したらすぐに知らせる。
 setopt no_tify
 
- ## 直前と同じコマンドをヒストリに追加しない
-setopt hist_ignore_dups
-
  ## 重複したディレクトリを追加しない
 setopt pushd_ignore_dups
 
@@ -53,23 +50,30 @@ setopt list_types
 export HISTFILE=${HOME}/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
-## スペース始まりのコマンドを削除
+
+ ## スペース始まりのコマンドを削除
 setopt hist_ignore_space
 
-##全てのヒストリを出せるようにした
+ ## 直前と同じコマンドをヒストリに追加しない
+setopt hist_ignore_dups
+
+ ##全てのヒストリを出せるようにした
 function history-all { history -E 1 }
 
-##ヒストリのエイリアス
+ ##ヒストリのエイリアス
 alias histall='history-all'
+
+ ## ヒストリに保存するときに余分なスペースを削除する
+setopt hist_reduce_blanks
+
+ ## historyコマンドを履歴に追加しない
+setopt hist_no_store
 
  ## 同時に起動したzshの間でヒストリを共有する
 setopt share_history
 
  ## openssl
 export PATH="/usr/local/opt/openssl/bin:$PATH"
-
- ## ヒストリに保存するときに余分なスペースを削除する
-setopt hist_reduce_blanks
 
  ## /を残して表示
 setopt noautoremoveslash
