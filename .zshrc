@@ -35,7 +35,7 @@ setopt no_flow_control
 setopt interactive_comments
 
  ## バックグラウンドジョブが終了したらすぐに知らせる。
-setopt no_tify
+setopt notify
 
  ## 重複したディレクトリを追加しない
 setopt pushd_ignore_dups
