@@ -27,6 +27,7 @@ setopt print_eight_bit
 
  ## ビープを鳴らさない
 setopt no_beep
+setopt no_hist_beep
 
 ## フローコントロールを無効にする
 setopt no_flow_control
