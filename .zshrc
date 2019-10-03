@@ -51,9 +51,6 @@ setopt extended_glob
  ## 補完候補一覧でファイル種別を色分け
 setopt list_types
 
-## TAABで候補をだす
-setopt auto_list
-
  ## ヒストリの設定
 export HISTFILE=${HOME}/.zsh_history
 HISTSIZE=1000000
