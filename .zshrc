@@ -83,6 +83,9 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
  ## /を残して表示
 setopt noautoremoveslash
 
+## ctl Dでzshが終了しないようにする
+setopt ignoreeof
+
  ## pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
