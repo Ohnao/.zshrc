@@ -125,6 +125,9 @@ export PATH="/Users/naoya.ohsaki/Qt5.5.0/5.5/clang_64/bin:$PATH"
 export EDITOR="vi"
 eval "$(direnv hook zsh)"
 
+## Homebrew's sbin can be found
+export PATH="/usr/local/sbin:$PATH"
+
 # zplug
 source ~/.zplug/init.zsh
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
