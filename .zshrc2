@@ -69,11 +69,11 @@ setopt share_history
 export CLICOLOR=1
 
 function left-prompt {
-  name_t='179m%}'      # user name text clolr
+  name_t='040m%}'      # user name text clolr
   name_b='000m%}'    # user name background color
-  path_t='000m%}'     # path text clolr
-  path_b='051m%}'   # path background color
-  arrow='087m%}'   # arrow color
+  path_t='051m%}'     # path text clolr
+  path_b='092m%}'   # path background color
+  arrow='202m%}'   # arrow color
   text_color='%{\e[38;5;'    # set text color
   back_color='%{\e[30;48;5;' # set background color
   reset='%{\e[0m%}'   # reset
