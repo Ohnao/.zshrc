@@ -1,6 +1,9 @@
 export PATH="/usr/local/opt/git/bin:$PATH"
 export PATH="/Users/naoya.ohsaki/flutter_products/flutter/bin:$PATH"
 
+##単語の途中でもカーソル位置からタブ補完可能
+setopt complete_in_word
+
 export CLICOLOR=1
 
 function left-prompt {
