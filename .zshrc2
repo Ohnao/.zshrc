@@ -1,6 +1,71 @@
 export PATH="/usr/local/opt/git/bin:$PATH"
 export PATH="/Users/naoya.ohsaki/flutter_products/flutter/bin:$PATH"
 
+#lsを高機能
+alias ls="ls -GF"
+
+##単語の途中でもカーソル位置からタブ補完可能
+setopt complete_in_word
+
+## カッコの対応を自動補完
+setopt auto_param_keys
+
+ ## 日本語ファイル名を表示可能にする
+setopt print_eight_bit
+
+ ## ビープを鳴らさない
+setopt no_beep
+setopt no_hist_beep
+setopt no_list_beep
+
+## 入力ミスに対して候補をだす
+setopt correct
+
+## フローコントロールを無効にする
+setopt no_flow_control
+
+ ## '#' 以降をコメントとして扱う
+setopt interactive_comments
+
+ ## バックグラウンドジョブが終了したらすぐに知らせる。
+setopt notify
+
+ ## 重複したディレクトリを追加しない
+setopt pushd_ignore_dups
+
+ ## 高機能なワイルドカード展開を使用
+setopt extended_glob
+
+ ## 補完候補一覧でファイル種別を色分け
+setopt list_types
+
+ ## ヒストリの設定
+export HISTFILE=${HOME}/.zsh_history
+HISTSIZE=1000000
+SAVEHIST=1000000
+
+ ## スペース始まりのコマンドを削除
+setopt hist_ignore_space
+
+ ## 直前と同じコマンドをヒストリに追加しない
+setopt hist_ignore_dups
+
+ ##全てのヒストリを出せるようにした
+function history-all { history -E 1 }
+
+ ##ヒストリのエイリアス
+alias histall='history-all'
+
+ ## ヒストリに保存するときに余分なスペースを削除する
+setopt hist_reduce_blanks
+
+ ## historyコマンドを履歴に追加しない
+setopt hist_no_store
+
+ ## 同時に起動したzshの間でヒストリを共有する
+setopt share_history
+
+#コマンドプロンプトカスタマイズ
 export CLICOLOR=1
 
 function left-prompt {
@@ -32,6 +97,7 @@ function precmd() {
     fi
 }
 
+# gitの状態を表示
 function rprompt-git-current-branch {
   local branch_name st branch_status
   
