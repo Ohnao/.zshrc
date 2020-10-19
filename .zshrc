@@ -12,6 +12,7 @@ export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46
 #lsを高機能
 alias ls="ls -GF"
 
+#ディレクトリカラー
 zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
 
  ## 補完で小文字でも大文字にマッチさせる
