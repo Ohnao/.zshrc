@@ -67,6 +67,8 @@ setopt share_history
 
 # gitの状態を表示するメソッド
 function git-current-branch {
+  local branch_name st branch_status
+
   branch='\ue0a0'
   color='%{\e[38;5;' #  文字色を設定
   green='046m%}'
@@ -137,10 +139,11 @@ function left-prompt {
 
   echo "${user}%n@%m${back_color}${path_b}${text_color}${name_b}${sharp} \
 ${dir}%~${back_color}${git_b}${text_color}${path_b}${sharp} \
-`git-current-branch`${text_color}${git_b}${sharp}\
+${RPROMPT}${text_color}${git_b}${sharp}\
 ${reset}\n${text_color}${arrow}>>${reset}"
 }
 
+# プロンプトの左側にメソッドの結果を表示させる
 PROMPT=`left-prompt`
 
 # コマンドの実行ごとに改行
