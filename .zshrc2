@@ -65,9 +65,8 @@ setopt hist_no_store
 ## 同時に起動したzshの間でヒストリを共有する
 setopt share_history
 
-# gitの状態を表示
+# gitの状態を表示するメソッド
 function git-current-branch {
-  local branch_name st branch_status
   branch='\ue0a0'
   color='%{\e[38;5;' #  文字色を設定
   green='046m%}'
