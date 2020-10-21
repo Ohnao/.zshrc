@@ -1,3 +1,4 @@
+#brewで落としたgit
 export PATH="/usr/local/opt/git/bin:$PATH"
 
 #FLutter本体
