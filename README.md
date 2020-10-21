@@ -1,7 +1,7 @@
-#.zshrc
+# .zshrc
 一番最初にoh-my-zshを使って色々やっていたzshの設定です。
 
-#.zshrc2
+# .zshrc2
 Agnosterの強化版をシェルスクリプトを書いて作っています。
 
 ## カラーリングの変更
