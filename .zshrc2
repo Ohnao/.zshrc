@@ -1,4 +1,6 @@
 export PATH="/usr/local/opt/git/bin:$PATH"
+
+#FLutter本体
 export PATH="/Users/naoya.ohsaki/flutter_products/flutter/bin:$PATH"
 
 #lsを高機能
