@@ -1,6 +1,7 @@
-#brewで落としたgit
+#brewで落としたgitのパス
 export PATH="/usr/local/opt/git/bin:$PATH"
 
+#Flutter本体のパス
 export PATH="/Users/naoya.ohsaki/flutter_products/flutter/bin:$PATH"
 
 #lsを高機能
