@@ -148,12 +148,3 @@ ${reset}\n${text_color}${arrow}>>${reset}"
 
 # プロンプトの左側にメソッドの結果を表示させる
 PROMPT=`left-prompt`
-
-# コマンドの実行ごとに改行
-function precmd() {
-    if [ -z "$NEW_LINE_BEFORE_PROMPT" ]; then
-        NEW_LINE_BEFORE_PROMPT=1
-    elif [ "$NEW_LINE_BEFORE_PROMPT" -eq 1 ]; then
-        echo ""
-    fi
-}
